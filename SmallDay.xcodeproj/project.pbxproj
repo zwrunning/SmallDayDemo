@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		C0BAFD731C286D6E00C52146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BAFD721C286D6E00C52146 /* AppDelegate.swift */; };
-		C0BAFD751C286D6E00C52146 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BAFD741C286D6E00C52146 /* ViewController.swift */; };
-		C0BAFD781C286D6E00C52146 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BAFD761C286D6E00C52146 /* Main.storyboard */; };
 		C0BAFD7A1C286D6E00C52146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0BAFD791C286D6E00C52146 /* Assets.xcassets */; };
-		C0BAFD7D1C286D6E00C52146 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BAFD7B1C286D6E00C52146 /* LaunchScreen.storyboard */; };
 		C0BAFD881C286D6F00C52146 /* SmallDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BAFD871C286D6F00C52146 /* SmallDayTests.swift */; };
 		C0BAFD931C286D6F00C52146 /* SmallDayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BAFD921C286D6F00C52146 /* SmallDayUITests.swift */; };
+		C0F600DA1C2963300065AE85 /* ZWClassifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F600CD1C2963300065AE85 /* ZWClassifyViewController.swift */; };
+		C0F600DB1C2963300065AE85 /* ZWExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F600CF1C2963300065AE85 /* ZWExperienceViewController.swift */; };
+		C0F600DC1C2963300065AE85 /* ZWExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F600D11C2963300065AE85 /* ZWExploreViewController.swift */; };
+		C0F600DF1C2963300065AE85 /* ZWMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F600D71C2963300065AE85 /* ZWMeViewController.swift */; };
+		C0F600E21C2963840065AE85 /* ZWTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F600E11C2963840065AE85 /* ZWTabBarController.swift */; };
+		C0F600E41C2963950065AE85 /* UIColor+zwColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F600E31C2963950065AE85 /* UIColor+zwColor.swift */; };
+		C0F600E61C2963B00065AE85 /* ZWTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F600E51C2963B00065AE85 /* ZWTheme.swift */; };
+		C0F600E81C29640F0065AE85 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F600E71C29640F0065AE85 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +41,7 @@
 /* Begin PBXFileReference section */
 		C0BAFD6F1C286D6E00C52146 /* SmallDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmallDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BAFD721C286D6E00C52146 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C0BAFD741C286D6E00C52146 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C0BAFD771C286D6E00C52146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0BAFD791C286D6E00C52146 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C0BAFD7C1C286D6E00C52146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0BAFD7E1C286D6E00C52146 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0BAFD831C286D6F00C52146 /* SmallDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmallDayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BAFD871C286D6F00C52146 /* SmallDayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallDayTests.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 		C0BAFD8E1C286D6F00C52146 /* SmallDayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmallDayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BAFD921C286D6F00C52146 /* SmallDayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallDayUITests.swift; sourceTree = "<group>"; };
 		C0BAFD941C286D6F00C52146 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0F600CD1C2963300065AE85 /* ZWClassifyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZWClassifyViewController.swift; sourceTree = "<group>"; };
+		C0F600CF1C2963300065AE85 /* ZWExperienceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZWExperienceViewController.swift; sourceTree = "<group>"; };
+		C0F600D11C2963300065AE85 /* ZWExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZWExploreViewController.swift; sourceTree = "<group>"; };
+		C0F600D71C2963300065AE85 /* ZWMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZWMeViewController.swift; sourceTree = "<group>"; };
+		C0F600E11C2963840065AE85 /* ZWTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZWTabBarController.swift; sourceTree = "<group>"; };
+		C0F600E31C2963950065AE85 /* UIColor+zwColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+zwColor.swift"; sourceTree = "<group>"; };
+		C0F600E51C2963B00065AE85 /* ZWTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZWTheme.swift; sourceTree = "<group>"; };
+		C0F600E71C29640F0065AE85 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Classes/Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +107,11 @@
 		C0BAFD711C286D6E00C52146 /* SmallDay */ = {
 			isa = PBXGroup;
 			children = (
+				C0F600CA1C2963300065AE85 /* Classes */,
 				C0BAFD721C286D6E00C52146 /* AppDelegate.swift */,
-				C0BAFD741C286D6E00C52146 /* ViewController.swift */,
-				C0BAFD761C286D6E00C52146 /* Main.storyboard */,
 				C0BAFD791C286D6E00C52146 /* Assets.xcassets */,
-				C0BAFD7B1C286D6E00C52146 /* LaunchScreen.storyboard */,
 				C0BAFD7E1C286D6E00C52146 /* Info.plist */,
+				C0F600E71C29640F0065AE85 /* Launch Screen.storyboard */,
 			);
 			path = SmallDay;
 			sourceTree = "<group>";
@@ -123,6 +132,84 @@
 				C0BAFD941C286D6F00C52146 /* Info.plist */,
 			);
 			path = SmallDayUITests;
+			sourceTree = "<group>";
+		};
+		C0F600CA1C2963300065AE85 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C0F600CB1C2963300065AE85 /* UI */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C0F600CB1C2963300065AE85 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C0F600CC1C2963300065AE85 /* Classify */,
+				C0F600CE1C2963300065AE85 /* Experience */,
+				C0F600D01C2963300065AE85 /* Explore */,
+				C0F600D21C2963300065AE85 /* Extension */,
+				C0F600D41C2963300065AE85 /* Main */,
+				C0F600D61C2963300065AE85 /* Me */,
+				C0F600D81C2963300065AE85 /* Theme */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C0F600CC1C2963300065AE85 /* Classify */ = {
+			isa = PBXGroup;
+			children = (
+				C0F600CD1C2963300065AE85 /* ZWClassifyViewController.swift */,
+			);
+			path = Classify;
+			sourceTree = "<group>";
+		};
+		C0F600CE1C2963300065AE85 /* Experience */ = {
+			isa = PBXGroup;
+			children = (
+				C0F600CF1C2963300065AE85 /* ZWExperienceViewController.swift */,
+			);
+			path = Experience;
+			sourceTree = "<group>";
+		};
+		C0F600D01C2963300065AE85 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				C0F600D11C2963300065AE85 /* ZWExploreViewController.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		C0F600D21C2963300065AE85 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C0F600E31C2963950065AE85 /* UIColor+zwColor.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C0F600D41C2963300065AE85 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C0F600E11C2963840065AE85 /* ZWTabBarController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C0F600D61C2963300065AE85 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				C0F600D71C2963300065AE85 /* ZWMeViewController.swift */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		C0F600D81C2963300065AE85 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				C0F600E51C2963B00065AE85 /* ZWTheme.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +316,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0BAFD7D1C286D6E00C52146 /* LaunchScreen.storyboard in Resources */,
+				C0F600E81C29640F0065AE85 /* Launch Screen.storyboard in Resources */,
 				C0BAFD7A1C286D6E00C52146 /* Assets.xcassets in Resources */,
-				C0BAFD781C286D6E00C52146 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +342,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0BAFD751C286D6E00C52146 /* ViewController.swift in Sources */,
+				C0F600E41C2963950065AE85 /* UIColor+zwColor.swift in Sources */,
+				C0F600DA1C2963300065AE85 /* ZWClassifyViewController.swift in Sources */,
+				C0F600DB1C2963300065AE85 /* ZWExperienceViewController.swift in Sources */,
+				C0F600DC1C2963300065AE85 /* ZWExploreViewController.swift in Sources */,
+				C0F600E61C2963B00065AE85 /* ZWTheme.swift in Sources */,
+				C0F600E21C2963840065AE85 /* ZWTabBarController.swift in Sources */,
+				C0F600DF1C2963300065AE85 /* ZWMeViewController.swift in Sources */,
 				C0BAFD731C286D6E00C52146 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,25 +383,6 @@
 			targetProxy = C0BAFD8F1C286D6F00C52146 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		C0BAFD761C286D6E00C52146 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C0BAFD771C286D6E00C52146 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C0BAFD7B1C286D6E00C52146 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C0BAFD7C1C286D6E00C52146 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C0BAFD951C286D6F00C52146 /* Debug */ = {
@@ -400,6 +473,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SmallDay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zawaya.SmallDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +485,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SmallDay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zawaya.SmallDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -484,6 +559,7 @@
 				C0BAFD991C286D6F00C52146 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0BAFD9A1C286D6F00C52146 /* Build configuration list for PBXNativeTarget "SmallDayTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +568,7 @@
 				C0BAFD9C1C286D6F00C52146 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0BAFD9D1C286D6F00C52146 /* Build configuration list for PBXNativeTarget "SmallDayUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +577,7 @@
 				C0BAFD9F1C286D6F00C52146 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

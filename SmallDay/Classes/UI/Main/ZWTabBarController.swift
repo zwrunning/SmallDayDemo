@@ -13,23 +13,39 @@ class ZWTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setupAllChildViewController()
+        
+        self.setValue(MainTabBar(), forKeyPath: "tabBar")
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    /// 初始化所有子控制器
+    private func setupAllChildViewController() {
+        // 探店
+        tabBarAddChildViewController(vc: ZWExploreViewController(), title: "探店", imageName: "recommendation_1", selectedImageName: "recommendation_2")
+        // 体验
+        tabBarAddChildViewController(vc: ZWExperienceViewController(), title: "体验", imageName: "broadwood_1", selectedImageName: "broadwood_2")
+        // 分类
+        tabBarAddChildViewController(vc: ZWClassifyViewController(), title: "分类", imageName: "classification_1", selectedImageName: "classification_2")
+        // 我的
+         tabBarAddChildViewController(vc: ZWMeViewController(), title: "我的", imageName: "my_1", selectedImageName: "my_2")
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    private func tabBarAddChildViewController(vc vc: UIViewController, title: String, imageName: String, selectedImageName: String) {
+        vc.tabBarItem = UITabBarItem(title: title, image: UIImage(named: imageName), selectedImage: UIImage(named: selectedImageName))
+        vc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.blackColor()], forState: .Selected)
+        vc.view.backgroundColor = theme.SDBackgroundColor
+        let nav = UINavigationController(rootViewController: vc)
+        addChildViewController(nav)
     }
-    */
+}
 
+class MainTabBar: UITabBar {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.translucent = false
+        self.backgroundImage = UIImage(named: "tabbar")
+    }
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
 }

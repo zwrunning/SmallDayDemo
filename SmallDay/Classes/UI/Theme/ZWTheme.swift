@@ -8,6 +8,9 @@
 
 import UIKit
 
-class ZWTheme: NSObject {
+public let MainBounds: CGRect = UIScreen.mainScreen().bounds
 
+struct theme {
+    /// ViewController的背景颜色
+    static let SDBackgroundColor: UIColor = UIColor.colorWith(255, 255, 255, alpha: 1)
 }
