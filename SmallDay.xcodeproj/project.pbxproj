@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56DFBFC12E10C99F4C09E958 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F95882A03247685C4D5A9A29 /* Pods.framework */; };
 		C0BAFD731C286D6E00C52146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BAFD721C286D6E00C52146 /* AppDelegate.swift */; };
 		C0BAFD7A1C286D6E00C52146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0BAFD791C286D6E00C52146 /* Assets.xcassets */; };
 		C0BAFD881C286D6F00C52146 /* SmallDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BAFD871C286D6F00C52146 /* SmallDayTests.swift */; };
@@ -19,6 +20,8 @@
 		C0F600E41C2963950065AE85 /* UIColor+zwColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F600E31C2963950065AE85 /* UIColor+zwColor.swift */; };
 		C0F600E61C2963B00065AE85 /* ZWTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F600E51C2963B00065AE85 /* ZWTheme.swift */; };
 		C0F600E81C29640F0065AE85 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F600E71C29640F0065AE85 /* Launch Screen.storyboard */; };
+		C0F600EC1C2968C20065AE85 /* ZWMainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F600EB1C2968C20065AE85 /* ZWMainTableView.swift */; };
+		C0F600EE1C2969830065AE85 /* ZWMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F600ED1C2969830065AE85 /* ZWMainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E4B3323D502E5E7FAB2E5E2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A5C6D9C400677F3D8CCDA811 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C0BAFD6F1C286D6E00C52146 /* SmallDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmallDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BAFD721C286D6E00C52146 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0BAFD791C286D6E00C52146 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +62,9 @@
 		C0F600E31C2963950065AE85 /* UIColor+zwColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+zwColor.swift"; sourceTree = "<group>"; };
 		C0F600E51C2963B00065AE85 /* ZWTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZWTheme.swift; sourceTree = "<group>"; };
 		C0F600E71C29640F0065AE85 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Classes/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C0F600EB1C2968C20065AE85 /* ZWMainTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZWMainTableView.swift; sourceTree = "<group>"; };
+		C0F600ED1C2969830065AE85 /* ZWMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZWMainViewController.swift; sourceTree = "<group>"; };
+		F95882A03247685C4D5A9A29 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56DFBFC12E10C99F4C09E958 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +93,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E0858FF0430225F3671A1E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5C6D9C400677F3D8CCDA811 /* Pods.debug.xcconfig */,
+				8E4B3323D502E5E7FAB2E5E2 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		59278CD25B6C53F34B8E01DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F95882A03247685C4D5A9A29 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C0BAFD661C286D6E00C52146 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +117,8 @@
 				C0BAFD861C286D6F00C52146 /* SmallDayTests */,
 				C0BAFD911C286D6F00C52146 /* SmallDayUITests */,
 				C0BAFD701C286D6E00C52146 /* Products */,
+				4E0858FF0430225F3671A1E2 /* Pods */,
+				59278CD25B6C53F34B8E01DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -192,6 +220,8 @@
 			isa = PBXGroup;
 			children = (
 				C0F600E11C2963840065AE85 /* ZWTabBarController.swift */,
+				C0F600EB1C2968C20065AE85 /* ZWMainTableView.swift */,
+				C0F600ED1C2969830065AE85 /* ZWMainViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -219,9 +249,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0BAFD971C286D6F00C52146 /* Build configuration list for PBXNativeTarget "SmallDay" */;
 			buildPhases = (
+				DADF2B8750F621DC1CD3C18E /* Check Pods Manifest.lock */,
 				C0BAFD6B1C286D6E00C52146 /* Sources */,
 				C0BAFD6C1C286D6E00C52146 /* Frameworks */,
 				C0BAFD6D1C286D6E00C52146 /* Resources */,
+				1F2408713E2C42DF6A3AD102 /* Embed Pods Frameworks */,
+				EC811DA720DAC0B6EBC305A1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,6 +307,7 @@
 		C0BAFD671C286D6E00C52146 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZW;
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Zawaya;
@@ -337,6 +371,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F2408713E2C42DF6A3AD102 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DADF2B8750F621DC1CD3C18E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EC811DA720DAC0B6EBC305A1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C0BAFD6B1C286D6E00C52146 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -344,9 +426,11 @@
 			files = (
 				C0F600E41C2963950065AE85 /* UIColor+zwColor.swift in Sources */,
 				C0F600DA1C2963300065AE85 /* ZWClassifyViewController.swift in Sources */,
+				C0F600EE1C2969830065AE85 /* ZWMainViewController.swift in Sources */,
 				C0F600DB1C2963300065AE85 /* ZWExperienceViewController.swift in Sources */,
 				C0F600DC1C2963300065AE85 /* ZWExploreViewController.swift in Sources */,
 				C0F600E61C2963B00065AE85 /* ZWTheme.swift in Sources */,
+				C0F600EC1C2968C20065AE85 /* ZWMainTableView.swift in Sources */,
 				C0F600E21C2963840065AE85 /* ZWTabBarController.swift in Sources */,
 				C0F600DF1C2963300065AE85 /* ZWMeViewController.swift in Sources */,
 				C0BAFD731C286D6E00C52146 /* AppDelegate.swift in Sources */,
@@ -470,6 +554,7 @@
 		};
 		C0BAFD981C286D6F00C52146 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5C6D9C400677F3D8CCDA811 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SmallDay/Info.plist;
@@ -482,6 +567,7 @@
 		};
 		C0BAFD991C286D6F00C52146 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E4B3323D502E5E7FAB2E5E2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SmallDay/Info.plist;

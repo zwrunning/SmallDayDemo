@@ -8,6 +8,21 @@
 
 import UIKit
 
+public let SD_UserIconData_Path = theme.cachesPath + "/iconImage.data"
+
+enum SDMineCellType: Int {
+    // 个人中心
+    case MyCenter = 0
+    // 我的订单
+    case MyOrder = 1
+    // 我的收藏
+    case MyCollect = 2
+    // 反馈留言
+    case Feedback = 3
+    // 应用推荐
+    case RecommendApp = 4
+}
+
 class ZWMeViewController: UIViewController {
 
     override func viewDidLoad() {
