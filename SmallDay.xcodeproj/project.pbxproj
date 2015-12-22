@@ -22,6 +22,11 @@
 		C0F600E81C29640F0065AE85 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F600E71C29640F0065AE85 /* Launch Screen.storyboard */; };
 		C0F600EC1C2968C20065AE85 /* ZWMainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F600EB1C2968C20065AE85 /* ZWMainTableView.swift */; };
 		C0F600EE1C2969830065AE85 /* ZWMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F600ED1C2969830065AE85 /* ZWMainViewController.swift */; };
+		C0F601091C29B95E0065AE85 /* ZWUIBarButtonItem+zwBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F601081C29B95E0065AE85 /* ZWUIBarButtonItem+zwBarButtonItem.swift */; };
+		C0F6010B1C29BD1B0065AE85 /* ZWIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6010A1C29BD1B0065AE85 /* ZWIconView.swift */; };
+		C0F6010D1C29BE4D0065AE85 /* ZWUIView+zwView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6010C1C29BE4D0065AE85 /* ZWUIView+zwView.swift */; };
+		C0F6010F1C29C0150065AE85 /* ZWUIImage+zwImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6010E1C29C0150065AE85 /* ZWUIImage+zwImage.swift */; };
+		C0F601121C29CD2F0065AE85 /* ZWUserAccountTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F601111C29CD2F0065AE85 /* ZWUserAccountTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +69,11 @@
 		C0F600E71C29640F0065AE85 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Classes/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		C0F600EB1C2968C20065AE85 /* ZWMainTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZWMainTableView.swift; sourceTree = "<group>"; };
 		C0F600ED1C2969830065AE85 /* ZWMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZWMainViewController.swift; sourceTree = "<group>"; };
+		C0F601081C29B95E0065AE85 /* ZWUIBarButtonItem+zwBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZWUIBarButtonItem+zwBarButtonItem.swift"; sourceTree = "<group>"; };
+		C0F6010A1C29BD1B0065AE85 /* ZWIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZWIconView.swift; sourceTree = "<group>"; };
+		C0F6010C1C29BE4D0065AE85 /* ZWUIView+zwView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZWUIView+zwView.swift"; sourceTree = "<group>"; };
+		C0F6010E1C29C0150065AE85 /* ZWUIImage+zwImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZWUIImage+zwImage.swift"; sourceTree = "<group>"; };
+		C0F601111C29CD2F0065AE85 /* ZWUserAccountTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZWUserAccountTool.swift; sourceTree = "<group>"; };
 		F95882A03247685C4D5A9A29 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -173,6 +183,7 @@
 		C0F600CB1C2963300065AE85 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				C0F601101C29CD1E0065AE85 /* Tool */,
 				C0F600CC1C2963300065AE85 /* Classify */,
 				C0F600CE1C2963300065AE85 /* Experience */,
 				C0F600D01C2963300065AE85 /* Explore */,
@@ -212,6 +223,9 @@
 			isa = PBXGroup;
 			children = (
 				C0F600E31C2963950065AE85 /* UIColor+zwColor.swift */,
+				C0F601081C29B95E0065AE85 /* ZWUIBarButtonItem+zwBarButtonItem.swift */,
+				C0F6010C1C29BE4D0065AE85 /* ZWUIView+zwView.swift */,
+				C0F6010E1C29C0150065AE85 /* ZWUIImage+zwImage.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -230,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				C0F600D71C2963300065AE85 /* ZWMeViewController.swift */,
+				C0F6010A1C29BD1B0065AE85 /* ZWIconView.swift */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -240,6 +255,14 @@
 				C0F600E51C2963B00065AE85 /* ZWTheme.swift */,
 			);
 			path = Theme;
+			sourceTree = "<group>";
+		};
+		C0F601101C29CD1E0065AE85 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				C0F601111C29CD2F0065AE85 /* ZWUserAccountTool.swift */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,6 +447,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0F601091C29B95E0065AE85 /* ZWUIBarButtonItem+zwBarButtonItem.swift in Sources */,
+				C0F601121C29CD2F0065AE85 /* ZWUserAccountTool.swift in Sources */,
+				C0F6010D1C29BE4D0065AE85 /* ZWUIView+zwView.swift in Sources */,
 				C0F600E41C2963950065AE85 /* UIColor+zwColor.swift in Sources */,
 				C0F600DA1C2963300065AE85 /* ZWClassifyViewController.swift in Sources */,
 				C0F600EE1C2969830065AE85 /* ZWMainViewController.swift in Sources */,
@@ -431,9 +457,11 @@
 				C0F600DC1C2963300065AE85 /* ZWExploreViewController.swift in Sources */,
 				C0F600E61C2963B00065AE85 /* ZWTheme.swift in Sources */,
 				C0F600EC1C2968C20065AE85 /* ZWMainTableView.swift in Sources */,
+				C0F6010B1C29BD1B0065AE85 /* ZWIconView.swift in Sources */,
 				C0F600E21C2963840065AE85 /* ZWTabBarController.swift in Sources */,
 				C0F600DF1C2963300065AE85 /* ZWMeViewController.swift in Sources */,
 				C0BAFD731C286D6E00C52146 /* AppDelegate.swift in Sources */,
+				C0F6010F1C29C0150065AE85 /* ZWUIImage+zwImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
