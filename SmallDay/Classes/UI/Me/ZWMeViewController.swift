@@ -56,7 +56,7 @@ class ZWMeViewController: UIViewController {
     /// 初始化tableView
     private func setupTableView() {
         
-        tableView = UITableView(frame: CGRectMake(0, 0, AppWidth, AppHeight - NavigationH - 49), style: UITableViewStyle.Grouped)
+        tableView = UITableView(frame: CGRectMake(0, 0, AppWidth, AppHeight), style: UITableViewStyle.Grouped)
         tableView.backgroundColor = UIColor.colorWith(245, 245, 245, alpha: 1)
         tableView.delegate = self
         tableView.dataSource = self
@@ -90,7 +90,7 @@ class ZWMeViewController: UIViewController {
     }
 
     func settingClick() {
-        let settingVC = UIViewController()
+        let settingVC = ZWSettingViewController(style: .Plain)
         navigationController?.pushViewController(settingVC, animated: true)
     }
     
@@ -117,7 +117,7 @@ extension ZWMeViewController: ZWIconViewDelegate {
         if ZWUserAccountTool.userIsLogin() {
             iconActionSheet.showInView(view)
         } else {
-            let login = UIViewController()
+            let login = ZWLoginViewController()
             navigationController?.pushViewController(login, animated: true)
         }
     }
@@ -232,11 +232,11 @@ extension ZWMeViewController: UITableViewDelegate, UITableViewDataSource {
         if indexPath.section == 0 {
             
             if indexPath.row == SDMineCellType.Feedback.hashValue {         // 留言反馈
-                let feedbackVC = UIViewController()
+                let feedbackVC = ZWFeedbackViewController()
                 navigationController?.pushViewController(feedbackVC, animated: true)
             } else if indexPath.row == SDMineCellType.MyCenter.hashValue {  // 个人中心
                 if ZWUserAccountTool.userIsLogin() {
-                    let myCenterVC = UIViewController()
+                    let myCenterVC = ZWMyCenterViewController()
                     navigationController!.pushViewController(myCenterVC, animated: true)
                 } else {
                     let login = UIViewController()
@@ -247,14 +247,14 @@ extension ZWMeViewController: UITableViewDelegate, UITableViewDataSource {
                 
             } else if indexPath.row == SDMineCellType.MyOrder.hashValue {   // 我的订单
                 if ZWUserAccountTool.userIsLogin() {
-                    let orderVC = UIViewController()
+                    let orderVC = ZWOrderViewController()
                     navigationController!.pushViewController(orderVC, animated: true)
                 } else {
-                    let login = UIViewController()
+                    let login = ZWLoginViewController()
                     navigationController?.pushViewController(login, animated: true)
                 }
             } else {                                                        // 应用推荐
-                let rmdVC = UIViewController()
+                let rmdVC = ZWRecommendViewController()
                 navigationController!.pushViewController(rmdVC, animated: true)
             }
             

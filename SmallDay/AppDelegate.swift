@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         setKeyWindow()
+        setShared()
         return true
     }
 
@@ -25,6 +26,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = ZWTabBarController()
         
         window?.makeKeyAndVisible()
+    }
+    
+    /// 分享设置
+    func setShared() {
+        UMSocialData.setAppKey(theme.UMSharedAPPKey)
+        UMSocialSinaHandler.openSSOWithRedirectURL(nil)
+        UMSocialWechatHandler.setWXAppId("wx485c6ee1758251bd", appSecret: "468ab73eef432f59a2aa5630e340862f", url: theme.BlogURL)
+        UMSocialConfig.hiddenNotInstallPlatforms([UMShareToWechatSession,UMShareToWechatTimeline])
+    }
+    
+    func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool {
+        return UMSocialSnsService.handleOpenURL(url)
+    }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        return UMSocialSnsService.handleOpenURL(url)
     }
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

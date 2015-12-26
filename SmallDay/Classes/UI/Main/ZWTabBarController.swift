@@ -34,7 +34,7 @@ class ZWTabBarController: UITabBarController {
         vc.tabBarItem = UITabBarItem(title: title, image: UIImage(named: imageName), selectedImage: UIImage(named: selectedImageName))
         vc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.blackColor()], forState: .Selected)
         vc.view.backgroundColor = theme.SDBackgroundColor
-        let nav = UINavigationController(rootViewController: vc)
+        let nav = ZWNavigationController(rootViewController: vc)
         addChildViewController(nav)
     }
 }

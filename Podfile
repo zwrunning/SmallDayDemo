@@ -6,3 +6,5 @@ pod 'Alamofire', '~> 3.1.4'
 pod 'Kingfisher', '~> 1.8.5'
 pod "AMap2DMap"
 pod "AMapSearch"
+pod 'SVProgressHUD', '~> 2.0-beta'
+pod 'UMengSocial', '~> 4.3'
